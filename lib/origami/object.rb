@@ -679,7 +679,7 @@ module Origami
             content << data
             content << eol << TOKENS.last << eol if indirect? and numbered?
 
-            content.force_encoding('binary')
+            content
         end
         alias output to_s
 
